@@ -8,18 +8,20 @@ import android.widget.TextView;
 import com.lanou3g.dllo.athm.R;
 import com.lanou3g.dllo.athm.utils.CarToast;
 
-public class MainActivity extends AppCompatActivity {
-   private TextView textView;
+public class MainActivity extends AbsBaseActivity {
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textView = (TextView) findViewById(R.id.tv);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CarToast.shortMsg("哈哈哈");
-            }
-        });
+    protected int setLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initDatas() {
+
     }
 }
