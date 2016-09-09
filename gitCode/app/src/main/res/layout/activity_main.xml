@@ -1,56 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-<!--占位-->
+
+    <!--占位-->
     <FrameLayout
         android:id="@+id/main_home_frgment_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#9c9c9c"/>
+        android:background="#9c9c9c" />
+
     <RadioGroup
         android:id="@+id/home_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-     <RadioButton
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:button="@null"
-         android:text="推荐"
-         android:layout_margin="10dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:text="论坛"
-            android:layout_margin="10dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:text="找车"
-            android:layout_margin="10dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:text="发现"
-            android:layout_margin="10dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:text="我"
-            android:layout_margin="10dp"/>
-    </RadioGroup>
 
+        <RadioButton
+            android:id="@+id/recommend_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:button="@null"
+            android:drawableTop="@drawable/remm"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/forum_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/four"/>
+
+        <RadioButton
+            android:id="@+id/findcar_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/fincar"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/find_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/fin"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/me_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+             />
+    </RadioGroup>
 
 
 </LinearLayout>
