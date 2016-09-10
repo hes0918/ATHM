@@ -2,9 +2,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:text="最新"
+    <FrameLayout
+        android:id="@+id/newest_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/newest_head_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+ </FrameLayout>
+    <ListView
+        android:id="@+id/newest_list_view_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/newest_tv_title"
+        android:text="标题"
+        android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/newest_img1_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/newest_img2_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/newest_img3_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/newest_time_tv"
+            android:text="时间"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text="几张图片"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/newest_list_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
